@@ -25,14 +25,14 @@ This closes any SDL_IOStreams that were being used as sound sources, and
 frees any resources in use by SDL_sound.
 
 All [Sound_Sample](Sound_Sample) pointers you had prior to this call are
-INVALIDATED.
+invalidated.
 
 Once successfully deinitialized, [Sound_Init](Sound_Init)() can be called
 again to restart the subsystem. All default API states are restored at this
 point.
 
-You should call this BEFORE SDL_Quit(). This will NOT call SDL_Quit() for
-you!
+You should call this _before_ SDL_Quit(). This will _not_ call SDL_Quit()
+for you!
 
 ## Thread Safety
 
