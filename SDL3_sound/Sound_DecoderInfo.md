@@ -34,8 +34,6 @@ for (const char **ext = info->extensions; *ext != NULL; ext++) {
 }
 ```
 
-The strings in this struct are generally meant to be human-readable.
-
 ## Version
 
 This struct is available since SDL_sound 1.0.0.
