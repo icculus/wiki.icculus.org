@@ -1,5 +1,8 @@
 # wiki.icculus.org
 
-Hello, world.
+This wiki currently hold documentation for some of [Ryan](https://icculus.org/~icculus/)'s libraries.
 
-Still testing the new wiki, please stand by.
+Currently available:
+
+- [SDL3_sound](SDL3_sound)
+
