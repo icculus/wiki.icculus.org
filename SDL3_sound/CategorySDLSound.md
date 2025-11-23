@@ -23,7 +23,7 @@ found at https://www.libsdl.org/
 
 Support is in place for the following sound formats:
 
-- .WAV (Microsoft WAV file RIFF data, internal.)
+- .WAV (Microsoft WAVfile RIFF data, internal.)
 - .VOC (Creative Labs' Voice format, internal.)
 - .MP3 (MPEG-1 Layer 3 support, via libmpg123.)
 - .MID (MIDI music converted to Waveform data, internal.)
@@ -34,7 +34,6 @@ Support is in place for the following sound formats:
 - .AU (Sun's Audio format, internal.)
 - .AIFF (Audio Interchange format, internal.)
 - .FLAC (Lossless audio compression, via libFLAC.)
-
 
 <!-- END CATEGORY DOCUMENTATION -->
 
