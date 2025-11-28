@@ -43,8 +43,11 @@ const char * PHYSFS_getDirSeparator(void);                                      
 void PHYSFS_permitSymbolicLinks(int allow);                                                                                                         // Enable or disable following of symbolic links.
 char ** PHYSFS_getCdRomDirs(void);                                                                                                                  // Get an array of paths to available CD-ROM drives.
 const char * PHYSFS_getBaseDir(void);                                                                                                               // Get the path where the application resides.
+const char * PHYSFS_getUserDir(void);                                                                                                               // Get the path where user's home directory resides.
 const char * PHYSFS_getWriteDir(void);                                                                                                              // Get path where PhysicsFS will allow file writing.
 int PHYSFS_setWriteDir(const char *newDir);                                                                                                         // Tell PhysicsFS where it may write files.
+int PHYSFS_addToSearchPath(const char *newDir, int appendToPath);                                                                                   // Add an archive or directory to the search path.
+int PHYSFS_removeFromSearchPath(const char *oldDir);                                                                                                // Remove a directory or archive from the search path.
 char ** PHYSFS_getSearchPath(void);                                                                                                                 // Get the current search path.
 int PHYSFS_setSaneConfig(const char *organization, const char *appName, const char *archiveExt, int includeCdRoms, int archivesFirst);              // Set up sane, default paths.
 int PHYSFS_mkdir(const char *dirName);                                                                                                              // Create a directory.
@@ -52,10 +55,15 @@ int PHYSFS_delete(const char *filename);                                        
 const char * PHYSFS_getRealDir(const char *filename);                                                                                               // Figure out where in the search path a file resides.
 char ** PHYSFS_enumerateFiles(const char *dir);                                                                                                     // Get a file listing of a search path's directory.
 int PHYSFS_exists(const char *fname);                                                                                                               // Determine if a file exists in the search path.
+int PHYSFS_isDirectory(const char *fname);                                                                                                          // Determine if a file in the search path is really a directory.
+int PHYSFS_isSymbolicLink(const char *fname);                                                                                                       // Determine if a file in the search path is really a symbolic link.
+PHYSFS_sint64 PHYSFS_getLastModTime(const char *filename);                                                                                          // Get the last modification time of a file.
 PHYSFS_File * PHYSFS_openWrite(const char *filename);                                                                                               // Open a file for writing.
 PHYSFS_File * PHYSFS_openAppend(const char *filename);                                                                                              // Open a file for appending.
 PHYSFS_File * PHYSFS_openRead(const char *filename);                                                                                                // Open a file for reading.
 int PHYSFS_close(PHYSFS_File *handle);                                                                                                              // Close a PhysicsFS filehandle.
+PHYSFS_sint64 PHYSFS_read(PHYSFS_File *handle, void *buffer, PHYSFS_uint32 objSize, PHYSFS_uint32 objCount);                                        // Read data from a PhysicsFS filehandle.
+PHYSFS_sint64 PHYSFS_write(PHYSFS_File *handle, const void *buffer, PHYSFS_uint32 objSize, PHYSFS_uint32 objCount);                                 // Write data to a PhysicsFS filehandle.
 int PHYSFS_eof(PHYSFS_File *handle);                                                                                                                // Check for end-of-file state on a PhysicsFS filehandle.
 PHYSFS_sint64 PHYSFS_tell(PHYSFS_File *handle);                                                                                                     // Determine current position within a PhysicsFS filehandle.
 int PHYSFS_seek(PHYSFS_File *handle, PHYSFS_uint64 pos);                                                                                            // Seek to a new position within a PhysicsFS filehandle.
@@ -105,6 +113,7 @@ int PHYSFS_mount(const char *newDir, const char *mountPoint, int appendToPath); 
 const char * PHYSFS_getMountPoint(const char *dir);                                                                                                 // Determine a mounted archive's mountpoint.
 void PHYSFS_getCdRomDirsCallback(PHYSFS_StringCallback c, void *d);                                                                                 // Enumerate CD-ROM directories, using an application-defined callback.
 void PHYSFS_getSearchPathCallback(PHYSFS_StringCallback c, void *d);                                                                                // Enumerate the search path, using an application-defined callback.
+void PHYSFS_enumerateFilesCallback(const char *dir, PHYSFS_EnumFilesCallback c, void *d);                                                           // Get a file listing of a search path's directory, using an application-defined callback.
 void PHYSFS_utf8FromUcs4(const PHYSFS_uint32 *src, char *dst, PHYSFS_uint64 len);                                                                   // Convert a UCS-4 string to a UTF-8 string.
 void PHYSFS_utf8ToUcs4(const char *src, PHYSFS_uint32 *dst, PHYSFS_uint64 len);                                                                     // Convert a UTF-8 string to a UCS-4 string.
 void PHYSFS_utf8FromUcs2(const PHYSFS_uint16 *src, char *dst, PHYSFS_uint64 len);                                                                   // Convert a UCS-2 string to a UTF-8 string.
