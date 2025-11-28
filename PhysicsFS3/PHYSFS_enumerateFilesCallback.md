@@ -19,6 +19,14 @@ Defined in [<physfs.h>](https://github.com/icculus/physfs/blob/main/src/physfs.h
 void PHYSFS_enumerateFilesCallback(const char *dir, PHYSFS_EnumFilesCallback c, void *d);
 ```
 
+## Function Parameters
+
+|                                                      |         |                                                            |
+| ---------------------------------------------------- | ------- | ---------------------------------------------------------- |
+| const char *                                         | **dir** | Directory, in platform-independent notation, to enumerate. |
+| [PHYSFS_EnumFilesCallback](PHYSFS_EnumFilesCallback) | **c**   | Callback function to notify about search path elements.    |
+| void *                                               | **d**   | Application-defined data passed to callback. Can be NULL.  |
+
 ## Remarks
 
 As of PhysicsFS 2.1, this function just wraps

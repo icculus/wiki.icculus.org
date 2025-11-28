@@ -17,6 +17,19 @@ Defined in [<physfs.h>](https://github.com/icculus/physfs/blob/main/src/physfs.h
 int PHYSFS_addToSearchPath(const char *newDir, int appendToPath);
 ```
 
+## Function Parameters
+
+|              |                  |                                                                          |
+| ------------ | ---------------- | ------------------------------------------------------------------------ |
+| const char * | **newDir**       | directory or archive to add to the path, in platform-dependent notation. |
+| int          | **appendToPath** | nonzero to append to search path, zero to prepend.                       |
+
+## Return Value
+
+(int) Returns nonzero if added to path, zero on failure (bogus archive, dir
+missing, etc). Use [PHYSFS_getLastErrorCode](PHYSFS_getLastErrorCode)() to
+obtain the specific error.
+
 ## Remarks
 
 This function is equivalent to:

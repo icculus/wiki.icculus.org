@@ -20,6 +20,18 @@ Defined in [<physfs.h>](https://github.com/icculus/physfs/blob/main/src/physfs.h
 int PHYSFS_removeFromSearchPath(const char *oldDir);
 ```
 
+## Function Parameters
+
+|              |            |                        |
+| ------------ | ---------- | ---------------------- |
+| const char * | **oldDir** | dir/archive to remove. |
+
+## Return Value
+
+(int) Returns nonzero on success, zero on failure. Use
+[PHYSFS_getLastErrorCode](PHYSFS_getLastErrorCode)() to obtain the specific
+error.
+
 ## Remarks
 
 This function is equivalent to:
