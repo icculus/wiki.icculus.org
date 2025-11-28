@@ -9,8 +9,7 @@ Defined in [<physfs.h>](https://github.com/icculus/physfs/blob/main/src/physfs.h
 ## Syntax
 
 ```c
-int PHYSFS_utf16stricmp(const PHYSFS_uint16 *str1,
-     const PHYSFS_uint16 *str2);
+int PHYSFS_utf16stricmp(const PHYSFS_uint16 *str1, const PHYSFS_uint16 *str2);
 ```
 
 ## Function Parameters

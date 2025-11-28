@@ -9,9 +9,7 @@ Defined in [<physfs.h>](https://github.com/icculus/physfs/blob/main/src/physfs.h
 ## Syntax
 
 ```c
-PHYSFS_sint64 PHYSFS_writeBytes(PHYSFS_File *handle,
-             const void *buffer,
-             PHYSFS_uint64 len);
+PHYSFS_sint64 PHYSFS_writeBytes(PHYSFS_File *handle, const void *buffer, PHYSFS_uint64 len);
 ```
 
 ## Function Parameters

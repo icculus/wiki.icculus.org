@@ -10,8 +10,8 @@ Defined in [<physfs.h>](https://github.com/icculus/physfs/blob/main/src/physfs.h
 
 ```c
 int PHYSFS_mountMemory(const void *buf, PHYSFS_uint64 len,
-    PHYSFS_FreeCallback del, const char *newDir,
-    const char *mountPoint, int appendToPath);
+         PHYSFS_FreeCallback del, const char *newDir,
+         const char *mountPoint, int appendToPath);
 ```
 
 ## Function Parameters

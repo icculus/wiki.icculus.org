@@ -9,8 +9,9 @@ Defined in [<physfs.h>](https://github.com/icculus/physfs/blob/main/src/physfs.h
 ## Syntax
 
 ```c
-int PHYSFS_mountIo(PHYSFS_Io *io, const char *newDir,
-const char *mountPoint, int appendToPath);
+int PHYSFS_mountIo(PHYSFS_Io *io,
+ const char *newDir, const char *mountPoint,
+ int appendToPath);
 ```
 
 ## Function Parameters

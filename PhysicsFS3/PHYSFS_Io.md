@@ -76,7 +76,7 @@ typedef struct PHYSFS_Io
      * \returns number of bytes written to file, -1 if complete failure.
      */
     PHYSFS_sint64 (PHYSFS_CALL *write)(struct PHYSFS_Io *io, const void *buffer,
-                           PHYSFS_uint64 len);
+                                       PHYSFS_uint64 len);
 
     /**
      * Move i/o position to a given byte offset from start.

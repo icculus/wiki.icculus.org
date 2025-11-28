@@ -10,7 +10,7 @@ Defined in [<physfs.h>](https://github.com/icculus/physfs/blob/main/src/physfs.h
 
 ```c
 int PHYSFS_mountHandle(PHYSFS_File *file, const char *newDir,
-    const char *mountPoint, int appendToPath);
+                       const char *mountPoint, int appendToPath);
 ```
 
 ## Function Parameters

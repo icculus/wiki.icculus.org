@@ -9,8 +9,7 @@ Defined in [<physfs.h>](https://github.com/icculus/physfs/blob/main/src/physfs.h
 ## Syntax
 
 ```c
-int PHYSFS_enumerate(const char *dir, PHYSFS_EnumerateCallback c,
-  void *d);
+int PHYSFS_enumerate(const char *dir, PHYSFS_EnumerateCallback c, void *d);
 ```
 
 ## Function Parameters

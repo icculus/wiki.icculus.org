@@ -9,8 +9,7 @@ Defined in [<physfs.h>](https://github.com/icculus/physfs/blob/main/src/physfs.h
 ## Syntax
 
 ```c
-void PHYSFS_utf8FromLatin1(const char *src, char *dst,
-        PHYSFS_uint64 len);
+void PHYSFS_utf8FromLatin1(const char *src, char *dst, PHYSFS_uint64 len);
 ```
 
 ## Function Parameters

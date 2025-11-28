@@ -16,9 +16,7 @@ Defined in [<physfs.h>](https://github.com/icculus/physfs/blob/main/src/physfs.h
 ## Syntax
 
 ```c
-void PHYSFS_enumerateFilesCallback(const char *dir,
-                                               PHYSFS_EnumFilesCallback c,
-                                               void *d);
+void PHYSFS_enumerateFilesCallback(const char *dir, PHYSFS_EnumFilesCallback c, void *d);
 ```
 
 ## Remarks
