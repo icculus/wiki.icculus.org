@@ -166,7 +166,7 @@ typedef struct PHYSFS_Io
      * it is unsafe to touch that instance again and will discard any
      * references to it.
      *
-     * \param s The i/o instance to destroy.
+     * \param io The i/o instance to destroy.
      */
     void (PHYSFS_CALL *destroy)(struct PHYSFS_Io *io);
 } PHYSFS_Io;

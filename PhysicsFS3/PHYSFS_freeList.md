@@ -14,9 +14,9 @@ void PHYSFS_freeList(void *listVar);
 
 ## Function Parameters
 
-|        |             |                                                                                                        |
-| ------ | ----------- | ------------------------------------------------------------------------------------------------------ |
-| void * | **listVar** | List of information specified as freeable by this function. Passing NULL is safe; it is a valid no-op. |
+|        |             |                                                                          |
+| ------ | ----------- | ------------------------------------------------------------------------ |
+| void * | **listVar** | List of information specified as freeable by this function. May be NULL. |
 
 ## Remarks
 
