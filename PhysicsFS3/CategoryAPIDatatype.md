@@ -4,6 +4,7 @@
 <!-- BEGIN CATEGORY LIST -->
 - [PHYSFS_EnumerateCallback](PHYSFS_EnumerateCallback)
 - [PHYSFS_EnumFilesCallback](PHYSFS_EnumFilesCallback)
+- [PHYSFS_FreeCallback](PHYSFS_FreeCallback)
 - [PHYSFS_sint16](PHYSFS_sint16)
 - [PHYSFS_sint32](PHYSFS_sint32)
 - [PHYSFS_sint64](PHYSFS_sint64)

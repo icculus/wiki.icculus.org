@@ -65,6 +65,7 @@
 - [PHYSFS_FILETYPE_REGULAR](PHYSFS_FILETYPE_REGULAR)
 - [PHYSFS_FILETYPE_SYMLINK](PHYSFS_FILETYPE_SYMLINK)
 - [PHYSFS_flush](PHYSFS_flush)
+- [PHYSFS_FreeCallback](PHYSFS_FreeCallback)
 - [PHYSFS_freeList](PHYSFS_freeList)
 - [PHYSFS_getAllocator](PHYSFS_getAllocator)
 - [PHYSFS_getBaseDir](PHYSFS_getBaseDir)
