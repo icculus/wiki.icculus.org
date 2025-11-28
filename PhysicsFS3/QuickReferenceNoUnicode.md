@@ -26,6 +26,7 @@ fancy Unicode section headers, try using
 // XX       XX   XX     XX          XX  XX  XX            XX  XX            XX
 // XX       XX   XX     XX     XXXXXX   XX   XXXXXX  XXXXXX   XX       XXXXXX
 
+#define PHYSFS_DEPRECATED                                                                                                                           // A macro to tag a symbol as deprecated.
 #define PHYSFS_CALL                                                                                                                                 // The calling conventions for PhysicsFS entry points.
 #define PHYSFS_file                                                                                                                                 // 1.0 API compatibility define.
 #define PHYSFS_VER_MAJOR                                                                                                                            // The current major version of the PhysicsFS headers.
