@@ -30,7 +30,7 @@ fancy Unicode section headers, try using
 #define SDL_SOUND_MINOR_VERSION                                                                                                           // The current minor version of the SDL_sound headers.
 #define SDL_SOUND_MICRO_VERSION                                                                                                           // The current micro (or patchlevel) version of the SDL_sound headers.
 #define SDL_SOUND_VERSION                                                                                                                 // This is the version number macro for the current SDL_sound version.
-#define SDL_SOUND_VERSION_ATLEAST(X, Y, Z)                                                                                                // This macro will evaluate to true if compiled with SDL_net at least X.Y.Z.
+#define SDL_SOUND_VERSION_ATLEAST(X, Y, Z)                                                                                                // This macro will evaluate to true if compiled with SDL_sound at least X.Y.Z.
 int Sound_Version(void);                                                                                                                  // This function gets the version of the dynamically linked SDL_sound library.
 int Sound_Init(void);                                                                                                                     // Initialize SDL_sound.
 int Sound_Quit(void);                                                                                                                     // Shutdown SDL_sound.

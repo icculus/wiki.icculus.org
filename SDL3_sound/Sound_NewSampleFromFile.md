@@ -47,7 +47,9 @@ It is safe to call this function from any thread.
 
 ## Version
 
-This function is available since SDL_sound 1.0.0.
+This function is available since SDL_sound 1.0.0 (using
+[Sound_AudioInfo](Sound_AudioInfo); as of SDL_sound 3.0.0, this expects the
+SDL3 equivalent, SDL_AudioSpec, but is otherwise identical).
 
 ## See Also
 

@@ -92,7 +92,10 @@ It is safe to call this function from any thread.
 
 ## Version
 
-This function is available since SDL_sound 1.0.0.
+This function is available since SDL_sound 1.0.0 (using SDL_RWops and
+[Sound_AudioInfo](Sound_AudioInfo); as of SDL_sound 3.0.0, this expects the
+SDL3 equivalents, SDL_IOStream and SDL_AudioSpec, but is otherwise
+identical).
 
 ## See Also
 
