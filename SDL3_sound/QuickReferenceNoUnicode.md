@@ -43,6 +43,7 @@ Sound_Sample * Sound_NewSampleFromFile(const char *filename, const SDL_AudioSpec
 void Sound_FreeSample(Sound_Sample *sample);                                                                                              // Dispose of a Sound_Sample.
 Sint32 Sound_GetDuration(Sound_Sample *sample);                                                                                           // Retrieve total play time of sample, in milliseconds.
 int Sound_SetBufferSize(Sound_Sample *sample, Uint32 new_size);                                                                           // Change the current buffer size for a sample.
+int Sound_SetDesiredFormat(Sound_Sample *sample, const SDL_AudioSpec *desired);                                                           // Change the desired output format for a sample.
 Uint32 Sound_Decode(Sound_Sample *sample);                                                                                                // Decode more of the sound data in a Sound_Sample.
 Uint32 Sound_DecodeAll(Sound_Sample *sample);                                                                                             // Decode the remainder of the sound data in a Sound_Sample.
 int Sound_Rewind(Sound_Sample *sample);                                                                                                   // Rewind a sample to the start.
