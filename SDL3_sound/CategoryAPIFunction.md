@@ -17,6 +17,7 @@
 - [Sound_Rewind](Sound_Rewind)
 - [Sound_Seek](Sound_Seek)
 - [Sound_SetBufferSize](Sound_SetBufferSize)
+- [Sound_SetDesiredFormat](Sound_SetDesiredFormat)
 - [Sound_Version](Sound_Version)
 <!-- END CATEGORY LIST -->
 
