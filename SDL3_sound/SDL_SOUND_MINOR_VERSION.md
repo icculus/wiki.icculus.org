@@ -10,7 +10,7 @@ Defined in [<SDL3_sound/SDL_sound.h>](https://github.com/icculus/SDL_sound/blob/
 ## Syntax
 
 ```c
-#define SDL_SOUND_MINOR_VERSION 0
+#define SDL_SOUND_MINOR_VERSION 3
 ```
 
 ## Remarks

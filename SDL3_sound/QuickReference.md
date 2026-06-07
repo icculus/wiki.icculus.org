@@ -12,7 +12,7 @@ the fancy Unicode section headers, try using
 // https://icculus.org/SDL_sound/
 //
 // The latest version of this document can be found at https://wiki.libsdl.org/SDL3_sound/QuickReference
-// Based on SDL_sound version 3.0.0
+// Based on SDL_sound version 3.3.0
 //
 // This can be useful in an IDE with search and syntax highlighting.
 //
