@@ -16,7 +16,7 @@ ControllerImage_Device * ControllerImage_CreateGamepadDevice(SDL_Gamepad *gamepa
 
 |               |             |                               |
 | ------------- | ----------- | ----------------------------- |
-| SDL_Gamepad * | **gamepad** | an opened SDL gamepad to use. |
+| SDL_Gamepad * | **gamepad** | an opened gamepad to look up. |
 
 ## Return Value
 

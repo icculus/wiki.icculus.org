@@ -38,6 +38,12 @@ Using the library is simple:
 - Done with the library? Call
   [ControllerImage_Quit](ControllerImage_Quit)() to clean up.
 
+You will need a datafile, which you can build from the files that come with
+the library's source code. Please see README.md in the root of the source
+tree, or
+[the wiki](https://wiki.icculus.org/ControllerImage/)
+for the details on how to do that.
+
 <!-- END CATEGORY DOCUMENTATION -->
 
 ## Functions
