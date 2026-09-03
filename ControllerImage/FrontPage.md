@@ -4,6 +4,11 @@ The latest version of this library is available from [GitHub](https://github.com
 
 A detailed overview, and a list of available APIs, can be viewed in [CategoryControllerImage](CategoryControllerImage).
 
+<!-- 
+HEY. Below is a copy/paste of the project's README.md, but this is _not_ bridged to 
+the wiki, so if you make good changes here, please manually update the other, too.
+-->
+
 ## What is this?
 
 This is a library, built on top of [SDL3](https://wiki.libsdl.org/SDL3),
