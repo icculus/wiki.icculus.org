@@ -42,7 +42,7 @@ Company\\My Program Name"
 
 On Linux, this might look like: "/home/bob/.local/share/My Program Name"
 
-On Mac OS X, this might look like: "/Users/bob/Library/Application
+On macOS, this might look like: "/Users/bob/Library/Application
 Support/My Program Name"
 
 (etc.)
