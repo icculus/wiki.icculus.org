@@ -1,6 +1,6 @@
 # ControllerImage 1.0
 
-The latest version of this library is available from [GitHub](https://github.com/icculus/ControllerImage/releases).
+The latest version of this library is available from [GitHub](https://github.com/icculus/ControllerImage).
 
 A detailed overview, and a list of available APIs, can be viewed in [CategoryControllerImage](CategoryControllerImage).
 
