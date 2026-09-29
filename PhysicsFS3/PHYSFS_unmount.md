@@ -34,8 +34,8 @@ function is deprecated to keep the vocabulary paired with
 This must be a (case-sensitive) match to a dir or archive already in the
 search path, specified in platform-dependent notation.
 
-This call will fail (and fail to remove the element from the path) if the element still
-has files open in it.
+This call will fail (and fail to remove the element from the path) if the
+element still has files open in it.
 
 **WARNING**: This function wants the path to the archive or directory that
 was mounted (the same string used for the "newDir" argument of
