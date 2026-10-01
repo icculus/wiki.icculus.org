@@ -11,9 +11,9 @@ Defined in [<mojoelf.h>](https://github.com/icculus/mojoelf/blob/main/mojoelf.h)
 ```c
 typedef struct MOJOELF_Callbacks
 {
-    MOJOELF_LoaderCallback loader;
-    MOJOELF_ResolverCallback resolver;
-    MOJOELF_UnloaderCallback unloader;
+    MOJOELF_LoaderCallback loader;  /**< loads dependencies during a dlopen */
+    MOJOELF_ResolverCallback resolver;  /**< resolves dependencies during a dlopen */
+    MOJOELF_UnloaderCallback unloader;  /**< unloads dependencies during dlclose */
 } MOJOELF_Callbacks;
 ```
 
@@ -28,6 +28,9 @@ This function is available since MojoELF 1.0.0.
 
 ## See Also
 
+- [MOJOELF_LoaderCallback](MOJOELF_LoaderCallback)
+- [MOJOELF_ResolverCallback](MOJOELF_ResolverCallback)
+- [MOJOELF_UnloaderCallback](MOJOELF_UnloaderCallback)
 - [MOJOELF_dlopen_mem](MOJOELF_dlopen_mem)
 - [MOJOELF_dlopen_file](MOJOELF_dlopen_file)
 
